@@ -1,0 +1,12 @@
+.interlock_list {
+  padding-inline-start: unset;
+}
+
+.interlock_list li {
+  display: inline;
+}
+
+.interlock_list-marker {
+  align-self: center;
+  margin-right: var(--spacing-1);
+}

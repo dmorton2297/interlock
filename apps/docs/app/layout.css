@@ -45,7 +45,7 @@
 
 
 .interlock-docs_navigation {
-  width: 200px
+  min-width: 200px;
 }
 .interlock-docs_navigation .interlock_link {
   padding-bottom: var(--spacing-1);

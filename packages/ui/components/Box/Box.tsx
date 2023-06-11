@@ -5,7 +5,7 @@ export interface BoxProps {
   /**
    * @param children children that are passed into the box
    */
-  children: React.ReactNode | ReactNode[]
+  children?: React.ReactNode | ReactNode[]
   /**
    * @param  padding padding setting for the box (Optional)
    */
