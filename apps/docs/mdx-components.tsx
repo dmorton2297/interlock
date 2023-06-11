@@ -1,4 +1,4 @@
-import { Link, Text } from "ui";
+import { Link, List, Text } from "ui";
 import type { MDXComponents } from "mdx/types";
 
 // This file allows you to provide custom React components

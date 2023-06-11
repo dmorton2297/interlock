@@ -6,7 +6,24 @@
   display: inline;
 }
 
-.interlock_list-marker {
+.interlock_list_marker {
   align-self: center;
   margin-right: var(--spacing-1);
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  background-color: var(--color-list-marker);
+}
+
+.interlock_list-show-borders {
+  border: 1px solid var(--color-black);
+}
+
+.interlock_list-show-borders li .interlock_list_item {
+  border: unset;
+  border-bottom: 1px solid var(--color-black);
+}
+
+.interlock_list-show-borders li:last-child .interlock_list_item {
+  border: unset;
 }

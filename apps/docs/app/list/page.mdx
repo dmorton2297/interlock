@@ -1,0 +1,43 @@
+# List
+*Interlock list component* <br />
+
+This component inherits all params of the Box component<br />
+#### List props
+🔗 [items](#items) ▪️ [listItemBoxProps](#listItemBoxProps) ▪️ [variant](#variant)
+<div id="inherited">
+#### List inherited props
+  Box 🔗 [children](/box#children) ▪️ [padding](/box#padding) ▪️ [margin](/box#margin) ▪️ [css](/box/#css) ▪️ [className](/box/#css)<br />
+</div>
+
+#### List item props
+🔗 [key](#key) ▪️ [children](#children)
+
+
+## Props
+```typescript
+interface ListItemProps {
+  /**
+   * @param key identifies a particular list item
+   */
+  key: string | number;
+  /**
+   * @param children content that is rendered fo an item
+   */
+  children: string | React.ReactNode | React.ReactNode[];
+}
+
+interface ListProps extends BoxProps {
+  /**
+   * @param items Items to display in the list
+   */
+  items?: ListItemProps[];
+  /**
+   * @param listItemBoxProps Boxprops that will be applied to each list items container.
+   */
+  listItemBoxProps?: BoxProps;
+  /**
+   * @param variant specifies design vaiant
+   */
+  variant?: 'markers' | 'borders' | 'noformat'
+}
+```

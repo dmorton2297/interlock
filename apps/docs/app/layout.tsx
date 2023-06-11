@@ -34,7 +34,7 @@ export default function DocumentationLayout({
               <SectionContainer className="interlock-docs_navigation">
                 <strong>
                   <Text
-                    text="Docs finder"
+                    text="Primitives"
                     css={{
                       paddingBottom: Tokens.SPACING_2,
                       textDecoration: "underline",
@@ -45,6 +45,16 @@ export default function DocumentationLayout({
                 <Link to="/box">Box</Link>
                 <Link to="/flex">Flex</Link>
                 <Link to="/link">Link</Link>
+                <strong>
+                  <Text
+                    text="Data viz"
+                    css={{
+                      paddingBottom: Tokens.SPACING_2,
+                      textDecoration: "underline",
+                    }}
+                  />
+                </strong>
+                <Link to="/list">List</Link>
               </SectionContainer>
               <SectionContainer css={{ flexGrow: 1, overflowY: "auto" }}>
                 <div className="mdx-container">{children}</div>

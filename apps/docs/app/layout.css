@@ -33,7 +33,6 @@
 }
 
 .mdx-container ol,ul {
-  outline: 1px solid black;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }

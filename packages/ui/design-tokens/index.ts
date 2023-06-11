@@ -4,6 +4,7 @@ export const COLOR_BLACK = 'var(--color-black)';
 export const COLOR_WHITE = 'var(--color-white)';
 export const COLOR_GRAY = 'var(--color-gray)';
 export const COLOR_YELLOW = 'var(--color-yellow)';
+export const COLOR_LIST_MARKER = 'var(--color-list-marker)';
 export const SPACING_0 = 'var(--spacing-0)';
 export const SPACING_1 = 'var(--spacing-1)';
 export const SPACING_2 = 'var(--spacing-2)';
@@ -19,6 +20,7 @@ export enum Tokens {
   COLOR_WHITE = 'var(--color-white)',
   COLOR_YELLOW = 'var(--color-yellow)',
   COLOR_GRAY = 'var(--color-gray)',
+  COLOR_LIST_MARKER = 'var(--color-list-marker)',
   SPACING_0 = 'var(--spacing-0)',
   SPACING_1 = 'var(--spacing-1)',
   SPACING_2 = 'var(--spacing-2)',
