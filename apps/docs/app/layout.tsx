@@ -1,5 +1,6 @@
 import { SectionContainer } from "../components/SectionContainer";
 import { Box, COLOR_GRAY, Flex, Link, Text, Tokens } from "ui";
+import "ui/design-tokens/design-tokens.css"
 import "./layout.css";
 
 export default function DocumentationLayout({
