@@ -15,13 +15,26 @@ interface TextProps {
    * Options are header, subheader, body or caption
    */
   variant?: "header" | "subheader" | "body" | "caption";
+  /**
+   * @param align specifies how the text should be aligned
+   */
+  align?: "left" | "center" | "right";
 }
 
+/**
+ * 
+ * @param props - Text component props
+ * @returns A text component
+ */
 export function Text(props: TextProps) {
-  const { text, css, variant = "body" } = props;
+  const { text, css, variant = "body", align = "left" } = props;
   const variantClassName = `interlock_text-${variant}`;
+  const alignClassName = `interlock_text_align-${align}`;
   return (
-    <span className={`interlock_text ${variantClassName}`} style={css}>
+    <span
+      className={`interlock_text ${variantClassName} ${alignClassName}`}
+      style={css}
+    >
       {text}
     </span>
   );

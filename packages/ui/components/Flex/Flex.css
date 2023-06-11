@@ -1,0 +1,27 @@
+.interlock_flex {
+  display: flex
+}
+
+.interlock_flex_justify-center {
+  justify-content: center;
+}
+
+.interlock_flex_justify-between {
+  justify-content: space-between;
+}
+
+.interlock_flex_justify-around {
+  justify-content: space-around;
+}
+
+.interlock_flex_justify-end {
+  justify-content: flex-end;
+}
+
+.interlock_flex_direction-row {
+  flex-direction: row;
+}
+
+.interlock_flex_direction-column {
+  flex-direction: column;
+}

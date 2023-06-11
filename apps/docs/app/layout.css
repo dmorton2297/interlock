@@ -1,0 +1,8 @@
+:root {
+  --spacing-0: 0.1rem
+}
+
+.homepage-navigation, .homepage-footer {
+  background-color: var(--color-black);
+  color: var(--color-white)
+}

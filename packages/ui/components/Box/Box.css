@@ -1,0 +1,33 @@
+/** Paddings */
+.interlock_box_padding-small {
+  padding: var(--spacing-1)
+}
+
+.interlock_box_padding-medium {
+  padding: var(--spacing-2)
+}
+
+.interlock_box_padding-large {
+  padding: var(--spacing-2)
+}
+
+.interlock_box_padding-x-large {
+  padding: var(--spacing-3)
+}
+
+/** Margins **/
+.interlock_box_margin-small {
+  margin: var(--spacing-1)
+}
+
+.interlock_box_margin-medium {
+  margin: var(--spacing-2)
+}
+
+.interlock_box_margin-large {
+  margin: var(--spacing-2)
+}
+
+.interlock_box_margin-x-large {
+  margin: var(--spacing-3)
+}
