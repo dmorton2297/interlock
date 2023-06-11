@@ -2,10 +2,11 @@ import React from "react";
 import "./Text.css";
 
 interface TextProps {
+  children?: React.ReactNode
   /**
    * @param  text display text (Required)
    */
-  text: string;
+  text?: string;
   /**
    * @param CSS overrides provided in-line. (Optional)
    */
@@ -35,7 +36,7 @@ export function Text(props: TextProps) {
       className={`interlock_text ${variantClassName} ${alignClassName}`}
       style={css}
     >
-      {text}
+      {text || props.children}
     </span>
   );
 }
