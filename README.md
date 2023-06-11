@@ -7,13 +7,13 @@ This respository was built with the intention to contin all Interlock typescript
 
 
 ##### interlock-react (ui folder)
-interlock-react is a component library used for building modern web applications.
+interlock-react is a component library used for building modern web applications. npm package to come
 
 ##### interlock-react documentation site
-This project is used for documentating interlock-react.
+https://interlock-docs-pi.vercel.app/link
 
-##### interlock-playground
-A non-commitable simple react project used to experiment with interlock-react in development.
+##### interlock-react-client
+Simple react client that will be used for a later CLI project.
 
 
 ### Getting Started

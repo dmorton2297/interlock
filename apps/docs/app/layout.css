@@ -8,6 +8,15 @@
   color: var(--color-white);
 }
 
+.homepage-footer {
+  position: sticky;
+  bottom: 0
+}
+
+.homepage-footer a {
+  color: var(--color-white);
+}
+
 .mdx-container {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -27,6 +36,7 @@
   margin-bottom: var(--spacing-3);
   margin-top: var(--spacing-2);
 }
+
 
 .interlock-docs_navigation a {
   padding-bottom: var(--spacing-1);
