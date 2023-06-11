@@ -1,0 +1,55 @@
+import { Link } from "ui";
+import { RenderedResults } from "../../components/RenderedResults";
+
+# Link
+
+_Interlock link component_ <br />
+
+🔗 [to](#to) ▪️ [children](#children)
+
+
+## Prop Definition
+
+```typescript
+interface LinkProps {
+  /**
+   * @param to the href for a the underlying
+   * anchor tage
+   */
+  to: string;
+  /**
+   * The content you want to render as the children
+   * of the link
+   */
+  children: string | React.ReactNode | React.ReactNode[];
+}
+```
+--- 
+
+<div id="to">
+#### to
+  ```jsx
+  <>
+    <Link to="#">Visiting nothing</Link>
+  </>
+  ```
+  <RenderedResults>
+    <Link to="#">Visiting nothing</Link>
+  </RenderedResults>
+</div>
+
+---
+
+<div id="children">
+#### children
+  ```jsx
+  <>
+    <Link to="#">Visiting nothing</Link>
+    <Link to="#"><span>Passing react children</span></Link>
+  </>
+  ```
+  <RenderedResults>
+    <Link to="#">Passing a string</Link>
+    <Link to="#"><span>Passing react children</span></Link>
+  </RenderedResults>
+</div>
