@@ -1,0 +1,107 @@
+import { Flex, Text } from 'ui';
+import { RenderedResults } from '../../components/RenderedResults'
+
+# Flex
+*Interlock flex component* <br />
+This component inherits all params of the Box component<br />
+🔗 [justify](#justify) ▪️ [direction](#direction)
+
+<div id="inherited">
+  #### Inherited props
+  Box 🔗 [children](/box#children) ▪️ [padding](/box#padding) ▪️ [margin](/box#margin) ▪️ [css](/box/#css) ▪️ [className](/box/#css)<br />
+</div>
+---
+## Props
+```typescript
+export interface FlexProps extends BoxProps {
+  /**
+   * @param children children that are passed into the box
+   */
+  justify?: "between" | "around" | "center" | "end" | "start";
+  /**
+   * @param direction direction the flexbox should operate in
+   */
+  direction?: "row" | "column";
+}
+```
+---
+<div id="justify">
+### justify
+  ```jsx
+  <>
+    <Flex justify="around" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify around" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify around" />
+    </Flex>
+    <Flex justify="between" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify between" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify between" />
+    </Flex>
+    <Flex justify="center" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify center" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify center" />
+    </Flex>
+    <Flex justify="end" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify end" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify end" />
+    </Flex>
+    <Flex justify="start" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify start" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify start" />
+    </Flex>
+  </>
+  ```
+  <RenderedResults>
+    <Flex justify="around" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify around" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify around" />
+    </Flex>
+    <Flex justify="between" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify between" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify between" />
+    </Flex>
+    <Flex justify="center" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify center" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify center" />
+    </Flex>
+    <Flex justify="end" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify end" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify end" />
+    </Flex>
+    <Flex justify="start" margin="large">
+      <Text css={{ backgroundColor: 'lightgray' }} text="Justify start" />
+      <Text css={{ backgroundColor: 'gray' }} text="Justify start" />
+    </Flex>
+  </RenderedResults>
+</div>
+
+---
+<div id="direction">
+### direction
+  ```jsx
+  <>
+    <Flex direction="column">
+      <Text text="Direction column" css={{ backgroundColor: 'lightgray' }} />
+      <Text text="Direction column" css={{ backgroundColor: 'orange' }}/>
+    </Flex>
+    <Flex direction="row">
+      <Text text="Direction row" css={{ backgroundColor: 'lightgray' }} />
+      <Text text="Direction row" css={{ backgroundColor: 'orange' }}/>
+    </Flex>
+  </>
+  ```
+  <RenderedResults>
+   <Flex direction="column">
+      <Text text="Direction column" css={{ backgroundColor: 'lightgray' }} />
+      <Text text="Direction column" css={{ backgroundColor: 'orange' }}/>
+    </Flex>
+    <Flex direction="row">
+      <Text text="Direction row" css={{ backgroundColor: 'lightgray' }} />
+      <Text text="Direction row" css={{ backgroundColor: 'orange' }}/>
+    </Flex>
+  </RenderedResults>
+</div>
+---
+
+<br />
+<br />

@@ -6,7 +6,7 @@ This repository contains two main project
 This respository was built with the intention to contin all Interlock typescript in one repo.
 
 
-##### interlock-react
+##### interlock-react (ui folder)
 interlock-react is a component library used for building modern web applications.
 
 ##### interlock-react documentation site

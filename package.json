@@ -3,7 +3,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "dev:playground": "turbo run dev --filter playground",
+    "dev:irc": "turbo run dev --filter interlock-react-client",
     "dev:docs": "turbo run dev --filter docs",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""

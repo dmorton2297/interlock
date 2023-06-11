@@ -1,12 +1,12 @@
 {
-  "name": "playground",
+  "name": "interlock-react-client",
   "version": "0.0.0",
-  "description": "Playgound dev tool for working with Interlock",
+  "description": "Client side react client",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --port 3001 --open"
   },
-  "author": "",
+  "author": "Interlock",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
