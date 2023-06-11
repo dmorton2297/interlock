@@ -1,5 +1,5 @@
-{
-  "extends": "../../packages/tsconfig/next-app.json",
+ {
+  "extends": "./base.json",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -24,5 +24,7 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": [
+    "node_modules"
+  ]
 }

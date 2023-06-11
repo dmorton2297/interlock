@@ -18,6 +18,9 @@ export interface BoxProps {
    * @param CSS overrides provided in-line. (Optional)
    */
   css?: React.CSSProperties;
+  /**
+   * @param className css classnames
+   */
   className?: string;
 }
 

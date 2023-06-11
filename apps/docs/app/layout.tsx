@@ -9,6 +9,9 @@ export default function DocumentationLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css" />
+      </head>
       <body style={{ margin: 0 }}>
         <Box css={{ backgroundColor: COLOR_GRAY, height: "100vh" }}>
           <Flex direction="column" css={{ height: "100vh" }}>
@@ -24,11 +27,17 @@ export default function DocumentationLayout({
               justify="center"
               css={{ flexGrow: 1, backgroundColor: Tokens.COLOR_WHITE }}
             >
-              <SectionContainer css={{ minWidth: 150 }}>
+              <SectionContainer className="interlock-docs_navigation">
+                <strong><Text text="Docs finder" css={{ paddingBottom: Tokens.SPACING_2, textDecoration: 'underline' }} /></strong>
                 <Link to="/text">Text</Link>
+                <Link to="/box">Box</Link>
+                <Link to="/flex">Flex</Link>
+                <Link to="/link">Link</Link>
               </SectionContainer>
-              <SectionContainer css={{ flexGrow: 1 }}>
-                {children}
+              <SectionContainer css={{ flexGrow: 1, height: '82.7vh', overflowY: 'auto' }}>
+                <div className="mdx-container">
+                  {children}
+                </div>
               </SectionContainer>
             </Flex>
             <Flex className="homepage-footer" justify="center" padding="small">

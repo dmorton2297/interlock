@@ -1,0 +1,166 @@
+import { Box, Text } from 'ui';
+import { RenderedResults } from '../../components/RenderedResults'
+
+# Box
+*Interlock box component*
+
+🔗 [children](#children) ▪️ [padding](#padding) ▪️ [margin](#margin) ▪️ [css](#css) ▪️ [className](#className)
+
+---
+## Props
+```typescript
+export interface BoxProps {
+  /**
+   * @param children children that are passed into the box
+   */
+  children: React.ReactNode | ReactNode[]
+  /**
+   * @param  padding padding setting for the box (Optional)
+   */
+  padding?: 'small' | 'medium' | 'large' | 'x-large' | 'none'
+  /**
+   * @param  margin padding setting for the box (Optional)
+   */
+  margin?: 'small' | 'medium' | 'large' | 'x-large' | 'none'
+  /**
+   * @param CSS overrides provided in-line. (Optional)
+   */
+  css?: React.CSSProperties;
+  /**
+   * @param className css classnames
+   */
+  className?: string;
+}
+```
+---
+<div id="children">
+### children
+  ```jsx
+  <>
+    <Box css={{ backgroundColor: 'gray' }}>
+      <Text text="Children example usage usage" />
+    </Box>
+  </>
+  ```
+  <RenderedResults>
+    <Box css={{ backgroundColor: 'gray' }}>
+      <Text text="Children example usage usage" />
+    </Box>
+  </RenderedResults>
+</div>
+
+---
+<div id="padding">
+### padding
+  ```jsx
+  <>
+    <Box padding="small" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small padding usage" />
+    </Box>
+    <hr />
+    <Box padding="medium" css={{ backgroundColor: 'gray' }}>
+      <Text text="Medium padding usage" />
+    </Box>
+    <hr />
+    <Box padding="large" css={{ backgroundColor: 'gray' }}>
+      <Text text="Large padding usage" />
+    </Box>
+    <hr />
+    <Box padding="x-large" css={{ backgroundColor: 'gray' }}>
+      <Text text="X-lage padding usage" />
+    </Box>
+  </>
+  ```
+  <RenderedResults>
+    <Box padding="small" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small padding usage" />
+    </Box>
+    <hr />
+    <Box padding="medium" css={{ backgroundColor: 'gray' }}>
+      <Text text="Medium padding usage" />
+    </Box>
+    <hr />
+    <Box padding="large" css={{ backgroundColor: 'gray' }}>
+      <Text text="Large padding usage" />
+    </Box>
+    <hr />
+    <Box padding="x-large" css={{ backgroundColor: 'gray' }}>
+      <Text text="X-lage padding usage" />
+    </Box>
+  </RenderedResults>
+</div>
+
+---
+<div id="margin">
+### margin
+  ```jsx
+  <>
+    <Box margin="small" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+    <hr />
+    <Box margin="medium" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+    <hr />
+    <Box margin="large" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+    <hr />
+    <Box margin="x-large" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+  </>
+  ```
+  <RenderedResults>
+     <Box margin="small" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+    <hr />
+    <Box margin="medium" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+    <hr />
+    <Box margin="large" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+    <hr />
+    <Box margin="x-large" css={{ backgroundColor: 'gray' }}>
+      <Text text="Small margin usage" />
+    </Box>
+  </RenderedResults>
+</div>
+
+---
+<div id="css">
+### css
+  ```jsx
+  <>
+    <Box css={{ backgroundColor: 'red' }}>
+      <Text text="Css example usage" />
+    </Box>
+  </>
+  ```
+  <RenderedResults>
+    <Box css={{ backgroundColor: 'red' }}>
+      <Text text="CSS example usage" />
+    </Box>
+  </RenderedResults>
+</div>
+
+---
+<div id="className">
+### className
+  ```jsx
+  <>
+    <Box className="my-classname">
+      <Text text="Class name example usage" />
+    </Box>
+  </>
+  ```
+  <RenderedResults>
+     <Box className="my-classname">
+      <Text text="Children example usage usage" />
+    </Box>
+  </RenderedResults>
+</div>

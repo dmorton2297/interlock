@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Link.css";
 
 interface Props {
   to: string,
@@ -6,5 +7,5 @@ interface Props {
 }
 
 export function Link(props: Props) {
-  return <a href={props.to}>{props.children}</a>
+  return <a className="interlock_link" href={props.to}>{props.children}</a>
 }
