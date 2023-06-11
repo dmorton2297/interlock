@@ -1,4 +1,4 @@
-import { SectionContainer } from "@/components/SectionContainer";
+import { SectionContainer } from "../components/SectionContainer";
 import { Box, COLOR_GRAY, Flex, Link, Text, Tokens } from "ui";
 import "./layout.css";
 

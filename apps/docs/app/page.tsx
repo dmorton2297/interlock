@@ -1,5 +1,5 @@
 import { Tokens, Text, Link } from "ui";
-import { SectionContainer } from "@/components/SectionContainer";
+import { SectionContainer } from "../components/SectionContainer";
 
 export default function HomePage() {
   return (
