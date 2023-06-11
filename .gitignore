@@ -6,7 +6,7 @@ node_modules
 .pnp.js
 
 # ignore playgound
-apps/playground
+apps/playground/src/playground
 
 # testing
 coverage
