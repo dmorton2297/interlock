@@ -17,13 +17,13 @@ export default function DocumentationLayout({
       </head>
       <body style={{ margin: 0 }}>
         <Box css={{ backgroundColor: COLOR_GRAY, height: "100vh" }}>
-          <Flex direction="column">
+          <Flex direction="column" css={{ minHeight: `calc(100% - ${Tokens.SPACING_3}` }}>
             <Flex
               className="homepage-navigation"
               padding="large"
               justify="center"
             >
-              <Text variant="subheader" text="Interlock" />
+              <Link to="/"><Text variant="subheader" text="Interlock" /></Link>
             </Flex>
             <Flex
               padding="large"

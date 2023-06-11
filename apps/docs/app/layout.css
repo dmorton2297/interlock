@@ -8,13 +8,19 @@
   color: var(--color-white);
 }
 
+
 .homepage-footer {
   position: sticky;
   bottom: 0
 }
 
-.homepage-footer a {
+
+.homepage-footer a, .homepage-navigation a {
   color: var(--color-white);
+}
+
+.homepage-navigation a {
+  text-decoration: none;
 }
 
 .mdx-container {
@@ -38,8 +44,12 @@
 }
 
 
-.interlock-docs_navigation a {
+.interlock-docs_navigation {
+  width: 200px
+}
+.interlock-docs_navigation .interlock_link {
   padding-bottom: var(--spacing-1);
   width: 100px;
+  display: block
 }
 
