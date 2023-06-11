@@ -1,3 +1,5 @@
+@import url("../../../packages/ui/design-tokens/design-tokens.css");
+
 :root {
   --spacing-0: 0.1rem;
 }
@@ -8,14 +10,13 @@
   color: var(--color-white);
 }
 
-
 .homepage-footer {
   position: sticky;
-  bottom: 0
+  bottom: 0;
 }
 
-
-.homepage-footer a, .homepage-navigation a {
+.homepage-footer a,
+.homepage-navigation a {
   color: var(--color-white);
 }
 
@@ -29,10 +30,11 @@
 }
 
 .mdx-container li {
-  margin-bottom: 1.5rem
+  margin-bottom: 1.5rem;
 }
 
-.mdx-container ol,ul {
+.mdx-container ol,
+ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -42,13 +44,11 @@
   margin-top: var(--spacing-2);
 }
 
-
 .interlock-docs_navigation {
   min-width: 200px;
 }
 .interlock-docs_navigation .interlock_link {
   padding-bottom: var(--spacing-1);
   width: 100px;
-  display: block
+  display: block;
 }
-

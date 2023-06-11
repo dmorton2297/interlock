@@ -1,6 +1,5 @@
 import { SectionContainer } from "../components/SectionContainer";
 import { Box, COLOR_GRAY, Flex, Link, Text, Tokens } from "ui";
-import "ui/design-tokens/design-tokens.css"
 import "./layout.css";
 
 export default function DocumentationLayout({
@@ -16,7 +15,7 @@ export default function DocumentationLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
         />
       </head>
-      <body style={{ margin: 0 }}>
+      <body style={{ margin: 0 }} className="interlock_docs_body">
         <Box css={{ backgroundColor: COLOR_GRAY, height: "100vh" }}>
           <Flex direction="column" css={{ minHeight: `calc(100% - ${Tokens.SPACING_3}` }}>
             <Flex
