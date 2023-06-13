@@ -1,0 +1,4 @@
+.interlock_input {
+  padding: var(--spacing-1);
+  font-size: var(--text-size-small);
+}
