@@ -17,13 +17,18 @@ export default function DocumentationLayout({
       </head>
       <body style={{ margin: 0 }} className="interlock_docs_body">
         <Box css={{ backgroundColor: COLOR_GRAY, height: "100vh" }}>
-          <Flex direction="column" css={{ minHeight: `calc(100% - ${Tokens.SPACING_3}` }}>
+          <Flex
+            direction="column"
+            css={{ minHeight: `calc(100% - ${Tokens.SPACING_3}` }}
+          >
             <Flex
               className="homepage-navigation"
               padding="large"
               justify="center"
             >
-              <Link to="/"><Text variant="subheader" text="Interlock" /></Link>
+              <Link to="/">
+                <Text variant="subheader" text="Interlock" />
+              </Link>
             </Flex>
             <Flex
               padding="large"
@@ -46,6 +51,16 @@ export default function DocumentationLayout({
                 <Link to="/link">Link</Link>
                 <strong>
                   <Text
+                    text="Data input"
+                    css={{
+                      paddingBottom: Tokens.SPACING_2,
+                      textDecoration: "underline",
+                    }}
+                  />
+                </strong>
+                <Link to="/input">Input</Link>
+                <strong>
+                  <Text
                     text="Data viz"
                     css={{
                       paddingBottom: Tokens.SPACING_2,
@@ -61,7 +76,7 @@ export default function DocumentationLayout({
             </Flex>
           </Flex>
           <Flex className="homepage-footer" justify="center">
-          <Link to="https://github.com/dmorton2297/interlock/tree/main/packages/ui">
+            <Link to="https://github.com/dmorton2297/interlock/tree/main/packages/ui">
               <Text text="Github" />
             </Link>
           </Flex>

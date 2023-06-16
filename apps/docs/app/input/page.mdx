@@ -1,18 +1,35 @@
 # Input
 
-_Interlock input component_ <br />
+_Interlock Input component_ <br />
 
-This component inherits all params from [`InputHTMLAttributes<HTMLInputElement>`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/974d21f5ad4915dfd5ac428937337e4d15c9cf6d/types/react/index.d.ts#L2305) component<br />
+This component inherits all attributes inherit to Inputs. 
+It extends [`React.InputHTMLAttributes<HTMLInputElement>`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)
 
-#### Input props
 
-🔗 [items](#items) ▪️ [listItemBoxProps](#listItemBoxProps) ▪️ [variant](#variant)
+🔗 [label](#label) ▪️ [variant](#variant) ▪️ [type](#type) ▪️ [css](#css)
 
-<div id="inherited">
-  #### List inherited props Box 🔗 [children](/box#children) ▪️
-  [padding](/box#padding) ▪️ [margin](/box#margin) ▪️ [css](/box/#css) ▪️
-  [className](/box/#css)
-  <br />
-</div>
+### Input Props
+```typescript
+interface InputProps
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, "style"> {
+  /**
+   * Label for input
+   */
+  label: string;
+  /**
+   * Input variant
+   */
+  variant?: "labelled" | "label-hidden";
+  /**
+   * Input type
+   */
+  type?: "number" | "string";
+  /**
+   * Inline input overrides
+   */
+  css?: React.CSSProperties;
+} 
+```
 
-#### List item props
+
+
