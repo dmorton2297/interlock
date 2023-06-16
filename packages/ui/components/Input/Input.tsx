@@ -9,6 +9,10 @@ interface InputProps
    */
   label: string;
   /**
+   * Name passed to underlying input
+   */
+  name: string;
+  /**
    * Input variant
    */
   variant?: "labelled" | "label-hidden";
@@ -23,7 +27,7 @@ interface InputProps
 }
 
 export function Input(props: InputProps) {
-  const { variant = "labelled" } = props;
+  const { variant = "labelled", name } = props;
   return (
     <>
       {variant === "labelled" && (
@@ -36,6 +40,7 @@ export function Input(props: InputProps) {
         aria-label={props.label}
         style={props.css}
         className={`interlock_input ${props.className || ""}`}
+        name={name}
       />
     </>
   );

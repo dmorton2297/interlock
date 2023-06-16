@@ -33,11 +33,6 @@
   margin-bottom: 1.5rem;
 }
 
-.mdx-container ol,
-ul {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .mdx-container hr {
   margin-bottom: var(--spacing-3);

@@ -1,19 +1,26 @@
+import { List } from "ui";
+import { RenderedResults } from "../../components/RenderedResults";
+
+
 # List
-*Interlock list component* <br />
+
+_Interlock list component_ <br />
 
 This component inherits all params of the Box component<br />
+
 #### List props
+
 🔗 [items](#items) ▪️ [listItemBoxProps](#listItemBoxProps) ▪️ [variant](#variant)
+
 <div id="inherited">
-#### List inherited props
-  Box 🔗 [children](/box#children) ▪️ [padding](/box#padding) ▪️ [margin](/box#margin) ▪️ [css](/box/#css) ▪️ [className](/box/#css)<br />
+  #### List inherited props Box 
+  🔗 [padding](/box#padding) ▪️ [margin](/box#margin) ▪️ [css](/box/#css)
+  [className](/box/#css)
+  <br />
 </div>
 
-#### List item props
-🔗 [key](#key) ▪️ [children](#children)
-
-
 ## Props
+
 ```typescript
 interface ListItemProps {
   /**
@@ -38,6 +45,68 @@ interface ListProps extends BoxProps {
   /**
    * @param variant specifies design vaiant
    */
-  variant?: 'markers' | 'borders' | 'noformat'
+  variant?: "markers" | "borders" | "noformat";
 }
 ```
+<div id="items">
+### items
+  ```jsx
+const items = [{ key: 'test_item1', children: <span>Test item 1</span>},
+                { key: 'test_item2', children: <span>Test item 2</span>},
+                { key: 'test_item1', children: <span>Test item 3</span>}]    
+  ```
+  ```jsx
+  <>
+    <List items={items} />
+  </>
+  ```
+  <RenderedResults>
+      <List items={[{ key: 'test_item1', children: <span>Test item 1</span> },
+                    { key: 'test_item2', children: <span>Test item 2</span> },
+                    { key: 'test_item3', children: <span>Test item 3</span> }]} />
+  </RenderedResults>
+</div>
+---
+<div id="listItemBoxProps">
+### listItemBoxProps
+  ```jsx
+  <>
+    <List items={items} listItemBoxProps={{ margin: 'small' }} />
+  </>
+  ```
+  <RenderedResults>
+      <List
+        listItemBoxProps={{ padding: 'small' }}
+        items={[{ key: 'test_item', children: <span>Example of</span>},
+                { key: 'test_item', children: <span>customizing list item</span>},
+                { key: 'test_item', children: <span>props</span>}]} />
+  </RenderedResults>
+</div>
+---
+<div id="variant">
+### variant
+ ```jsx
+  <>
+    <List items={items} variant="markers" />
+    <List items={items} variant="borders" />
+    <List items={items} variant="noformat" />
+  </>
+  ```
+  <RenderedResults>
+    <List
+      css={{ padding: 0 }} 
+      items={[{ key: 'test_item1', children: <span>Test item 1</span> },
+                      { key: 'test_item2', children: <span>Test item 2</span> },
+                      { key: 'test_item3', children: <span>Test item 3</span> }]} variant="markers" />
+    <List
+      css={{ padding: 0 }} 
+      items={[{ key: 'test_item1', children: <span>Test item 1</span> },
+                    { key: 'test_item2', children: <span>Test item 2</span> },
+                    { key: 'test_item3', children: <span>Test item 3</span> }]} variant="borders" />
+    <List
+      css={{ padding: 0 }}  
+      items={[{ key: 'test_item1', children: <span>Test item 1</span> },
+                    { key: 'test_item2', children: <span>Test item 2</span> },
+                    { key: 'test_item3', children: <span>Test item 3</span> }]} variant="noformat" />
+  </RenderedResults>
+</div>

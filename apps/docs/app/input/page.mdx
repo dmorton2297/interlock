@@ -1,14 +1,17 @@
+import { Input, Text } from 'ui';
+import { RenderedResults } from '../../components/RenderedResults'
+
 # Input
 
 _Interlock Input component_ <br />
 
-This component inherits all attributes inherit to Inputs. 
+This component inherits all attributes inherit to Inputs.
 It extends [`React.InputHTMLAttributes<HTMLInputElement>`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)
-
 
 🔗 [label](#label) ▪️ [variant](#variant) ▪️ [type](#type) ▪️ [css](#css)
 
 ### Input Props
+
 ```typescript
 interface InputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "style"> {
@@ -16,6 +19,10 @@ interface InputProps
    * Label for input
    */
   label: string;
+  /**
+   * Name attribute for forms
+   */
+  name: string;
   /**
    * Input variant
    */
@@ -28,8 +35,72 @@ interface InputProps
    * Inline input overrides
    */
   css?: React.CSSProperties;
-} 
+}
 ```
 
+---
+
+<div id="label">
+### label
+  ```jsx
+  <> 
+    <Input label="Test label" />
+  </>
+  ```
+  <RenderedResults>
+        <Input label="Test label" name="" />
+  </RenderedResults>
+</div>
+---
+
+<div id="name">
+  ### name
+  Underling string value that is passed as the name attribute to the underlying `input`
+</div>
+---
+
+<div id="variant">
+  ### variant
+  ```jsx
+  <>
+    <Input label='Test variant' variant="labelled" css={{ marginBottom: 10 }} />
+    <Input label='Test variant' variant="label-hidden" />
+  </>
+  ```
+  <RenderedResults>
+    <Input label='Test variant' variant="labelled" css={{ marginBottom: 10 }} />
+    <br />
+    <Input label='Test variant' variant="label-hidden" />
+  </RenderedResults>
+</div>
+---
 
 
+<div id="type">
+  ### type
+  ```jsx
+  <>
+    <Input label='String' type="string" css={{ marginBottom: 10 }} />
+    <Input label="Number" type="number" />
+  </>
+  ```
+  <RenderedResults>
+  <>
+    <Input label='String' type="string" css={{ marginBottom: 10 }} />
+    <Input label="Number" type="number" />
+  </>
+  </RenderedResults>
+</div>
+---
+
+
+<div id="css">
+```jsx
+<>
+  <Input label='Custom css' css={{ width: '100%', maxWidth: 200 }} />
+</>
+```
+<RenderedResults>
+<Input label='Custom css' css={{ width: '100%', maxWidth: 400 }} />
+</RenderedResults>
+</div>

@@ -16,7 +16,7 @@ export default function DocumentationLayout({
         />
       </head>
       <body style={{ margin: 0 }} className="interlock_docs_body">
-        <Box css={{ backgroundColor: COLOR_GRAY, height: "100vh" }}>
+        <Box css={{ height: "100vh" }}>
           <Flex
             direction="column"
             css={{ minHeight: `calc(100% - ${Tokens.SPACING_3}` }}
@@ -33,7 +33,7 @@ export default function DocumentationLayout({
             <Flex
               padding="large"
               justify="center"
-              css={{ flexGrow: 1, backgroundColor: Tokens.COLOR_WHITE }}
+              css={{ flexGrow: 1, backgroundColor: Tokens.COLOR_WHITE, maxWidth: 1800, width: '100%', alignSelf: 'center' }}
             >
               <SectionContainer className="interlock-docs_navigation">
                 <strong>
