@@ -5,6 +5,7 @@
     "dev": "turbo run dev",
     "dev:irc": "turbo run dev --filter interlock-react-client",
     "dev:docs": "turbo run dev --filter docs",
+    "dev:devspace": "turbo run dev --filter devspace",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
