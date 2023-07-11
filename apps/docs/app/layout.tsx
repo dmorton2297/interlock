@@ -1,5 +1,5 @@
 import { SectionContainer } from "../components/SectionContainer";
-import { Box, COLOR_GRAY, Flex, Link, Text, Tokens } from "ui";
+import { Box, Flex, Link, Text, Tokens } from "ui";
 import "./layout.css";
 
 export default function DocumentationLayout({
@@ -31,9 +31,8 @@ export default function DocumentationLayout({
               </Link>
             </Flex>
             <Flex
-              padding="large"
               justify="center"
-              css={{ flexGrow: 1, backgroundColor: Tokens.COLOR_WHITE, maxWidth: 1800, width: '100%', alignSelf: 'center' }}
+              css={{ flexGrow: 1, backgroundColor: Tokens.COLOR_WHITE, maxWidth: 1800, width: '100%', alignSelf: 'center', padding: `${Tokens.SPACING_1} 0` }}
             >
               <SectionContainer className="interlock-docs_navigation">
                 <strong>
@@ -49,6 +48,7 @@ export default function DocumentationLayout({
                 <Link to="/box">Box</Link>
                 <Link to="/flex">Flex</Link>
                 <Link to="/link">Link</Link>
+                <Link to="/modal">Modal</Link>
                 <strong>
                   <Text
                     text="Data input"

@@ -16,7 +16,10 @@
   "devDependencies": {
     "@types/react": "^18.2.11",
     "@types/react-dom": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
     "css-loader": "^6.8.1",
+    "eslint": "^8.43.0",
     "html-webpack-plugin": "^5.5.2",
     "mini-css-extract-plugin": "^2.7.6",
     "ts-loader": "^9.4.3",

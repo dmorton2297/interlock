@@ -8,4 +8,5 @@ export * from "./components/Input";
 export * from "./components/Link";
 export * from "./components/List";
 export * from "./components/Input";
+export * from "./components/Modal";
 export * from "./design-tokens";

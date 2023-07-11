@@ -1,7 +1,8 @@
+"use client"
 import React, { useState } from "react";
 import { Box, Modal } from "ui";
 
-export const Playground: React.FC = () => {
+export function ModalDemo() {
   const [open, setOpen] = useState(false);
 
   const handleCloseModal = () => {

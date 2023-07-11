@@ -1,0 +1,50 @@
+import { List } from "ui";
+import { RenderedResults } from "../../components/RenderedResults";
+import { ModalDemo } from "../../components/ModalDemo";
+
+# Modal
+
+_Interlock Modal react component_ <br />
+
+🔗 [open](#open) ▪️ [handleOnClose](#handleOnClose) ▪️ [prop3](#prop3)
+
+<div id="inherited">
+  #### Inherited props
+  Box 🔗 [children](/box#children) ▪️ [padding](/box#padding) ▪️ [margin](/box#margin) ▪️ [css](/box/#css) ▪️ [className](/box/#css)<br />
+</div>
+
+## Props
+```typescript
+interface ModalProps extends BoxProps {
+  open: boolean;
+  handleCloseModal: () => void;
+}
+```
+
+---
+<div id="open">
+### Usage
+  ```typescript
+export function ModalDemo() {
+  const [open, setOpen] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpen(false);
+  };
+
+  return (
+    <Box>
+      <Modal
+        handleCloseModal={handleCloseModal}
+        open={open}
+        css={{ width: 300, height: 300 }}
+      />
+      <button onClick={() => setOpen(true)}>Click me to open modal</button>
+    </Box>
+  );
+}
+  ```
+  <RenderedResults>
+    <ModalDemo />
+  </RenderedResults>
+</div>

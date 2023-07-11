@@ -21,3 +21,7 @@
   --text-line-height-large: 3.0rem;
   --box-border-radius: 3px;
 }
+
+body {
+  margin: unset
+}
