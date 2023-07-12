@@ -1,0 +1,75 @@
+# DevSpace Blogging Platform - November 2020 - Chicago, IL
+*note: Updated July 11 2023. This post is about this website original implementation*
+
+---
+
+<br />
+
+## About Dev Space
+A couple months ago I started to feel the burn to start to build my portfolio outside of my day to day job. I wanted to do this in two ways. First, I wanted to start working on a side project to simply expand my portfolio in a "technical accomplishment" sense. Secondly, I wanted to start a professional blog. Thus, I started building DevSpace, a full blown platform for writing blogs. 
+
+<br />
+
+## Writing blog posts in Markdown?
+The initial curiosity that set me off on building this application was the concept of writing blog posts in markdown. Almost every developer knows how to write markdown through its extensive use in readme.md files, and it has its benefits. The primary benefit is you can type in plain text, and set "styling" by just using some special characters. For example ...
+```
+### This is a header
+**this is bold text**
+*this is italic*
+
+```
+Is rendered in HTML as below
+***
+## This is a header
+
+**this is bold text**
+
+*this is italic*
+***
+
+<br />
+
+Since markdown is so familiar to developers, writing technical blogs that are formatted nicely is enabled through DevSpace. Every article has a general format that looks pretty good, so intead of worrying about looks, the user (me) can just focus on writing content.
+
+ Another benefit is it has great support for code formatting, which is an essential part of technical blog posts. Take for example below - which behind the scenes is plain text and mark down decorators, but gets formatted and highlighted nicely.
+
+``` JavaScript
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    <div>
+      <web-component>{block}</web-component>
+    </div>
+  )
+}
+
+export  $initHighlight;
+```
+
+<br />
+
+## Technical Stack
+This application was written using React.js, and an express Node.js server running it's api services. 
+**Notable frontend technologies**: redux, material-ui, Highlight.js, firebase auth, firebase storage. 
+**Notable backend technologies**: MongoDB, Express, Mongoose. 
+**Notable dev-ops technologies**: Heroku CICD, MongoDB Atlas, Google Domains, GitHub.
+
+<br />
+
+***
+*Author: Dan Morton*
+*Software Engineer*
+*Chicago, IL*
+
+

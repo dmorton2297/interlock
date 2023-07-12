@@ -19,8 +19,9 @@ interface LinkProps {
 }
 
 export function Link(props: LinkProps) {
+  const { className = "" } = props;
   return (
-    <a className={`interlock_link ${props.className}`} href={props.to}>
+    <a className={`interlock_link ${className}`} href={props.to}>
       {props.children}
     </a>
   );

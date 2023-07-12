@@ -16,8 +16,12 @@ body {
 
 .app-navigation {
   height: 100%;
-  background-color: var(--color-gray);
-  grid-column: 1;
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-black);
+}
+
+.app-navigation  .interlock_list a {
+  color: var(--color-black);
 }
 
 .header-text {
@@ -32,5 +36,6 @@ body {
 }
 
 .app-content {
-  padding: var(--spacing-2)
+  padding: var(--spacing-2);
+  overflow-y: scroll;
 }
