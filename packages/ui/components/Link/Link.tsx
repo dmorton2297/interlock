@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Link.css";
 
 interface LinkProps {
@@ -6,14 +6,22 @@ interface LinkProps {
    * @param to the href for a the underlying
    * anchor tage
    */
-  to: string,
+  to: string;
   /**
    * The content you want to render as the children
    * of the link
    */
-  children: string | React.ReactNode | React.ReactNode[],
+  children: string | React.ReactNode | React.ReactNode[];
+  /**
+   * css classnames
+   */
+  className?: string;
 }
 
 export function Link(props: LinkProps) {
-  return <a className="interlock_link" href={props.to}>{props.children}</a>
+  return (
+    <a className={`interlock_link ${props.className}`} href={props.to}>
+      {props.children}
+    </a>
+  );
 }

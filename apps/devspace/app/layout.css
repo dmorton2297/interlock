@@ -1,1 +1,36 @@
 @import url("../../../packages/ui/design-tokens/design-tokens.css");
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  --navigation-height: 70px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: var(--navigation-height) calc(
+      100% - var(--navigation-height)
+    );
+}
+
+.app-navigation {
+  height: 100%;
+  background-color: var(--color-gray);
+  grid-column: 1;
+}
+
+.header-text {
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+}
+
+.app-content {
+  padding: var(--spacing-2)
+}

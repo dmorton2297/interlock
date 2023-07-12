@@ -12,6 +12,10 @@ interface TextProps {
    */
   css?: React.CSSProperties;
   /**
+   * @param classNames css classes. (optional)
+   */
+  className?: string;
+  /**
    * @param Variant specifies text variant.
    * Options are header, subheader, body or caption
    */
@@ -28,12 +32,12 @@ interface TextProps {
  * @returns A text component
  */
 export function Text(props: TextProps) {
-  const { text, css, variant = "body", align = "left" } = props;
+  const { text, css, className = "", variant = "body", align = "left" } = props;
   const variantClassName = `interlock_text-${variant}`;
   const alignClassName = `interlock_text_align-${align}`;
   return (
     <span
-      className={`interlock_text ${variantClassName} ${alignClassName}`}
+      className={`interlock_text ${variantClassName} ${alignClassName} ${className}`}
       style={css}
     >
       {text || props.children}

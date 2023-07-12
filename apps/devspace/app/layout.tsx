@@ -1,8 +1,6 @@
+import { Box, Tokens, Text, Link } from "ui";
 import "./layout.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "devspace blog",
@@ -16,13 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
-        />
-      </head>
-      <body style={{}}>{children}</body>
+      <body>
+        <Box className="app-container">
+          <Link to="/" className="header-text">
+            <Text variant="header" css={{ alignSelf: "center" }}>
+              devspace
+            </Text>
+          </Link>
+          <Box className="app-navigation" />
+          <Box className="app-content">{children}</Box>
+        </Box>
+      </body>
     </html>
   );
 }
