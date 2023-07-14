@@ -4,7 +4,8 @@
 
 @media only screen and (max-width: 600px) {
   .app-navigation {
-    width: 95vw;
+    width: 90vw;
+    margin-bottom: 100px;
   }
 }
 
@@ -34,10 +35,6 @@
   to {
     opacity: 1;
   }
-}
-
-.app-menu-trigger {
-
 }
 
 .app-navigation .interlock_list a {
