@@ -1,4 +1,4 @@
-import { Box, Tokens, Text, Link, List } from "ui";
+import { Box, Tokens, Text, Link, List, Flex } from "ui";
 import "./layout.css";
 import type { Metadata } from "next";
 
@@ -66,6 +66,19 @@ export default function RootLayout({
           </Box>
           <Box className="app-content">{children}</Box>
         </Box>
+        <Flex
+          className="homepage-footer"
+          justify="center"
+          css={{ alignItems: "center", gap: Tokens.SPACING_1 }}
+        >
+          <Text variant="caption">Created by Dan Morton</Text>
+          <Link
+            to="https://github.com/dmorton2297/interlock/tree/main/apps/devspace"
+            css={{ color: Tokens.COLOR_WHITE }}
+          >
+            <Text text="🔗source" variant="caption" />
+          </Link>
+        </Flex>
       </body>
     </html>
   );

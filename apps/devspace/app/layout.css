@@ -4,6 +4,13 @@ body {
   margin: 0;
 }
 
+.homepage-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
 .app-container {
   --navigation-height: 70px;
   height: 100vh;

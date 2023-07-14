@@ -16,12 +16,20 @@ interface LinkProps {
    * css classnames
    */
   className?: string;
+  /**
+   * css inline styles
+   */
+  css?: React.CSSProperties;
 }
 
 export function Link(props: LinkProps) {
   const { className = "" } = props;
   return (
-    <a className={`interlock_link ${className}`} href={props.to}>
+    <a
+      className={`interlock_link ${className}`}
+      style={props.css}
+      href={props.to}
+    >
       {props.children}
     </a>
   );
