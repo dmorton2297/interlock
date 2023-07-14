@@ -32,7 +32,14 @@ export default function DocumentationLayout({
             </Flex>
             <Flex
               justify="center"
-              css={{ flexGrow: 1, backgroundColor: Tokens.COLOR_WHITE, maxWidth: 1800, width: '100%', alignSelf: 'center', padding: `${Tokens.SPACING_1} 0` }}
+              css={{
+                flexGrow: 1,
+                backgroundColor: Tokens.COLOR_WHITE,
+                maxWidth: 1800,
+                width: "100%",
+                alignSelf: "center",
+                padding: `${Tokens.SPACING_1} 0`,
+              }}
             >
               <SectionContainer className="interlock-docs_navigation">
                 <strong>

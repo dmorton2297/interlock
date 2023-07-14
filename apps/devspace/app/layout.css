@@ -4,32 +4,19 @@ body {
   margin: 0;
 }
 
-.homepage-footer {
-  position: sticky;
-  bottom: 0;
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
 
 .app-container {
   --navigation-height: 70px;
+  --app-content-height: calc(
+    100% - var(--navigation-height)
+  );
   height: 100vh;
   display: grid;
-  grid-template-columns: 200px auto;
-  grid-template-rows: var(--navigation-height) calc(
-      100% - var(--navigation-height)
-    );
+  grid-template-columns: 100%;
+  grid-template-rows: var(--navigation-height) var(--app-content-height);
+  overflow: hidden;
 }
 
-.app-navigation {
-  height: 100%;
-  background-color: var(--color-white);
-  border-right: 1px solid var(--color-black);
-}
-
-.app-navigation  .interlock_list a {
-  color: var(--color-black);
-}
 
 .header-text {
   text-decoration: none;
