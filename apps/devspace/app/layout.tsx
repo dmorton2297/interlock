@@ -22,13 +22,16 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <AppNavigation />
         <Box className="app-container">
-          <Link to="/" className="header-text">
-            <Text variant="header" css={{ alignSelf: "center" }}>
-              devspace
-            </Text>
-          </Link>
+          <Box className="header-text">
+            <Link to="/" className="header-text">
+              <Text variant="header" css={{ alignSelf: "center" }}>
+                devspace
+              </Text>
+            </Link>
+            <AppNavigation />
+          </Box>
+
           <Box className="app-content">{children}</Box>
         </Box>
       </body>

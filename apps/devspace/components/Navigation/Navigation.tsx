@@ -2,7 +2,7 @@
 
 import { Box, Link, List, Modal, Text, Tokens } from "ui";
 import "./Navigation.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const NAVIGATION_LINKS = [
   {
@@ -30,6 +30,15 @@ export const NAVIGATION_LINKS = [
 export function AppNavigation() {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+ 
+    }
+  }, [open]);
+
   return open ? (
     <Modal
       open={open}
@@ -56,8 +65,9 @@ export function AppNavigation() {
     <button
       className="app-menu-trigger"
       onClick={() => setOpen((open) => !open)}
-    >
-      Navigation
+        style={{ zIndex: 2 }}
+        >
+      Menu
     </button>
   );
 }

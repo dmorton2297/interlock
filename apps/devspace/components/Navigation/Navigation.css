@@ -37,9 +37,7 @@
 }
 
 .app-menu-trigger {
-  position: absolute;
-  right: var(--spacing-1);
-  top: var(--spacing-1);
+
 }
 
 .app-navigation .interlock_list a {
