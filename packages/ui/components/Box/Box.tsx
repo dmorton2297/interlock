@@ -1,37 +1,12 @@
-import React, { MouseEventHandler, ReactNode } from "react";
-import "./Box.css";
+import React from "react";
+import { BaseProps, ClickableProps } from "../../shared-props";
 
-export interface BoxProps {
-  /**
-   * @param children children that are passed into the box
-   */
-  children?: React.ReactNode | ReactNode[];
-  /**
-   * @param  padding padding setting for the box (Optional)
-   */
-  padding?: "small" | "medium" | "large" | "x-large" | "none";
-  /**
-   * @param  margin padding setting for the box (Optional)
-   */
-  margin?: "small" | "medium" | "large" | "x-large" | "none";
-  /**
-   * @param CSS overrides provided in-line. (Optional)
-   */
-  css?: React.CSSProperties;
-  /**
-   * @param className css classnames
-   */
-  className?: string;
-  /**
-   * @param onClick onClick handler
-   */
-  onClick?: MouseEventHandler<HTMLDivElement>
-}
+export type BoxProps = BaseProps & ClickableProps<HTMLDivElement>;
 
 export function Box(props: BoxProps) {
   const { children, padding = "none", margin = "none", css } = props;
-  const paddingClassName = `interlock_box_padding-${padding}`;
-  const marginClassName = `interlock_box_margin-${margin}`;
+  const paddingClassName = `interlock_padding-${padding}`;
+  const marginClassName = `interlock_margin-${margin}`;
 
   const classNames = `${paddingClassName} ${marginClassName} ${
     props.className || ""

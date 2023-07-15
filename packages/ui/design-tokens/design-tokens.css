@@ -22,3 +22,36 @@
   --box-border-radius: 3px;
 }
 
+/** Paddings */
+.interlock_padding-small {
+  padding: var(--spacing-1)
+}
+
+.interlock_padding-medium {
+  padding: var(--spacing-2)
+}
+
+.interlock_padding-large {
+  padding: var(--spacing-2)
+}
+
+.interlock_padding-x-large {
+  padding: var(--spacing-3)
+}
+
+/** Margins **/
+.interlock_margin-small {
+  margin: var(--spacing-1)
+}
+
+.interlock_margin-medium {
+  margin: var(--spacing-2)
+}
+
+.interlock_margin-large {
+  margin: var(--spacing-2)
+}
+
+.interlock_margin-x-large {
+  margin: var(--spacing-3)
+}

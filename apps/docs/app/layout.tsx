@@ -53,6 +53,7 @@ export default function DocumentationLayout({
                 </strong>
                 <Link to="/text">Text</Link>
                 <Link to="/box">Box</Link>
+                <Link to="/button">Button</Link>
                 <Link to="/flex">Flex</Link>
                 <Link to="/link">Link</Link>
                 <Link to="/modal">Modal</Link>
