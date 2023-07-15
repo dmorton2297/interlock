@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Link, List, Modal, Text, Tokens } from "ui";
+import { Box, Button, Link, List, Modal, Text, Tokens } from "ui";
 import "./Navigation.css";
 import { useEffect, useState } from "react";
 
@@ -53,12 +53,30 @@ export function AppNavigation() {
       </Box>
     </Modal>
   ) : (
-    <button
+    <Button
       className="app-menu-trigger"
       onClick={() => setOpen((open) => !open)}
-        style={{ zIndex: 2 }}
-        >
-      Menu
-    </button>
+      css={{ zIndex: 2 }}
+    >
+      <MenuIcon />
+    </Button>
+  );
+}
+
+function MenuIcon() {
+  return (
+    <Box css={{ alignSelf: "center", cursor: "pointer" }}>
+      <svg
+        width="22"
+        height="6"
+        viewBox="0 0 22 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="6" height="6" fill="white" />
+        <rect x="16" width="6" height="6" fill="white" />
+        <rect x="8" width="6" height="6" fill="white" />
+      </svg>
+    </Box>
   );
 }

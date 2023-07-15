@@ -5,6 +5,7 @@ import { BoxProps } from "../Box/Box";
 import { Flex } from "../Flex";
 import { Text } from "../Text";
 import "./Modal.css";
+import { Button } from "../Button";
 
 export interface ModalProps extends BoxProps {
   open: boolean;
@@ -29,7 +30,12 @@ export function Modal(props: ModalProps) {
             {props.children}
             <Box className="interlock_modal-vertical-expand" />
             <Flex justify="end">
-              <button onClick={props.handleCloseModal}>Close</button>
+              <Button
+                className="interlock_modal-close-button"
+                onClick={props.handleCloseModal}
+              >
+                Close
+              </Button>
             </Flex>
           </Flex>
         </Box>,

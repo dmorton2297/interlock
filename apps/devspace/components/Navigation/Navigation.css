@@ -2,6 +2,24 @@
   height: 80%;
 }
 
+app-navigation .interlock_list a {
+  color: var(--color-black);
+}
+
+.app-menu-trigger {
+  background-color: transparent;
+  border: none;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.interlock_modal-close-button {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  padding: var(--spacing-1)
+}
+
 @media only screen and (max-width: 600px) {
   .app-navigation {
     width: 90vw;
@@ -21,22 +39,3 @@
   }
 }
 
-.app-navigation {
-  animation-duration: 0.4s;
-  animation-name: fadeIn;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.app-navigation .interlock_list a {
-  color: var(--color-black);
-}
