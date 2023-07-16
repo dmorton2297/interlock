@@ -50,11 +50,11 @@ export function AppNavigation() {
       if (currButton) {
         currButton.addEventListener("mouseenter", mouseEnter);
         currButton.addEventListener("mouseleave", mouseLeave);
-
       }
       return () => {
         document.removeEventListener("keypress", keyListen);
         document.removeEventListener("mouseenter", mouseEnter);
+        document.removeEventListener("mouseleave", mouseLeave);
       };
     }
   });
