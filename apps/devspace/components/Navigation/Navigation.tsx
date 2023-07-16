@@ -41,7 +41,11 @@ export function AppNavigation() {
 
     if (currButton || currModal) {
       const keyListen = (e: KeyboardEvent) => {
+        const appContent = document.getElementsByClassName("app-content")[0];
         if (e.key === "p") setOpen((open) => !open);
+        if (e.key === "j") appContent.scroll({ top: appContent.scrollTop + 30 })
+        if (e.key === "k") appContent.scroll({ top: appContent.scrollTop - 30 });
+        
       };
       const mouseEnter = () => setKeyHelperVisible((v) => true);
       const mouseLeave = () => setKeyHelperVisible(false);
