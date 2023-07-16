@@ -1,8 +1,9 @@
 "use client";
 
-import { Box, Button, Link, List, Modal, Text, Tokens } from "ui";
+import { Box, Button, Flex, Link, List, Modal, Text } from "ui";
 import "./Navigation.css";
 import { useEffect, useRef, useState } from "react";
+import { NavigationButtonInfo } from "../NavigationButtonsInfo";
 
 export const NAVIGATION_LINKS = [
   {
@@ -29,6 +30,7 @@ export const NAVIGATION_LINKS = [
 
 export function AppNavigation() {
   const [open, setOpen] = useState(false);
+  const [keyHelperVisible, setKeyHelperVisible] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -38,11 +40,22 @@ export function AppNavigation() {
     const currModal = modalRef.current;
 
     if (currButton || currModal) {
-      const listen = (e: KeyboardEvent) => {
+      const keyListen = (e: KeyboardEvent) => {
         if (e.key === "p") setOpen((open) => !open);
       };
-      document.addEventListener("keypress", listen);
-      return () => document.removeEventListener("keypress", listen);
+      const mouseEnter = () => setKeyHelperVisible((v) => true);
+      const mouseLeave = () => setKeyHelperVisible(false);
+      document.addEventListener("keypress", keyListen);
+
+      if (currButton) {
+        currButton.addEventListener("mouseenter", mouseEnter);
+        currButton.addEventListener("mouseleave", mouseLeave);
+
+      }
+      return () => {
+        document.removeEventListener("keypress", keyListen);
+        document.removeEventListener("mouseenter", mouseEnter);
+      };
     }
   });
 
@@ -70,14 +83,17 @@ export function AppNavigation() {
       </Box>
     </Modal>
   ) : (
-    <Button
-      className="app-menu-trigger"
-      onClick={() => setOpen((open) => !open)}
-      css={{ zIndex: 2 }}
-      innerRef={buttonRef}
-    >
-      <MenuIcon />
-    </Button>
+    <Flex>
+      {keyHelperVisible && <NavigationButtonInfo />}
+      <Button
+        className="app-menu-trigger"
+        onClick={() => setOpen((open) => !open)}
+        css={{ zIndex: 2 }}
+        innerRef={buttonRef}
+      >
+        <MenuIcon />
+      </Button>
+    </Flex>
   );
 }
 
