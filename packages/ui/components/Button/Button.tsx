@@ -2,7 +2,8 @@ import React from "react";
 import { BaseProps, ClickableProps } from "../../shared-props";
 import "./Button.css";
 
-type ButtonProps = BaseProps & ClickableProps<HTMLButtonElement>;
+type ButtonProps = BaseProps<HTMLButtonElement> &
+  ClickableProps<HTMLButtonElement>;
 
 // TODO: Padding and margin classnames
 // can be consolidated with Box.ts
@@ -15,7 +16,12 @@ export function Button(props: ButtonProps) {
     props.className || ""
   }`;
   return (
-    <button onClick={props.onClick} className={classNames} style={css}>
+    <button
+      ref={props.innerRef}
+      onClick={props.onClick}
+      className={classNames}
+      style={css}
+    >
       {children}
     </button>
   );

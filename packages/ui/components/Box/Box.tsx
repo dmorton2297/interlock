@@ -1,7 +1,8 @@
 import React from "react";
 import { BaseProps, ClickableProps } from "../../shared-props";
 
-export type BoxProps = BaseProps & ClickableProps<HTMLDivElement>;
+export type BoxProps = BaseProps<HTMLDivElement> &
+  ClickableProps<HTMLDivElement>;
 
 export function Box(props: BoxProps) {
   const { children, padding = "none", margin = "none", css } = props;
@@ -12,7 +13,12 @@ export function Box(props: BoxProps) {
     props.className || ""
   }`;
   return (
-    <div className={classNames} style={css} onClick={props.onClick}>
+    <div
+      ref={props.innerRef}
+      className={classNames}
+      style={css}
+      onClick={props.onClick}
+    >
       {children}
     </div>
   );

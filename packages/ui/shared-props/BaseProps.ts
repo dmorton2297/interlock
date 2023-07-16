@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface BaseProps {
+export interface BaseProps<T> {
   /**
    * @param children children that are passed into the box
    */
@@ -21,4 +21,8 @@ export interface BaseProps {
    * @param className css classnames
    */
   className?: string;
+  /**
+   * @param ref allows setting a react ref on object
+   */
+  innerRef?: React.RefObject<T>;
 }

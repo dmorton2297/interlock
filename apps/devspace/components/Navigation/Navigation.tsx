@@ -2,7 +2,7 @@
 
 import { Box, Button, Link, List, Modal, Text, Tokens } from "ui";
 import "./Navigation.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const NAVIGATION_LINKS = [
   {
@@ -29,12 +29,29 @@ export const NAVIGATION_LINKS = [
 
 export function AppNavigation() {
   const [open, setOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // Navigation keybindings
+  useEffect(() => {
+    const currButton = buttonRef.current;
+    const currModal = modalRef.current;
+
+    if (currButton || currModal) {
+      const listen = (e: KeyboardEvent) => {
+        if (e.key === "p") setOpen((open) => !open);
+      };
+      document.addEventListener("keypress", listen);
+      return () => document.removeEventListener("keypress", listen);
+    }
+  });
 
   return open ? (
     <Modal
       open={open}
       handleCloseModal={() => setOpen((open) => !open)}
       className="app-navigation"
+      innerRef={modalRef}
     >
       <Box padding="small">
         <Text
@@ -57,6 +74,7 @@ export function AppNavigation() {
       className="app-menu-trigger"
       onClick={() => setOpen((open) => !open)}
       css={{ zIndex: 2 }}
+      innerRef={buttonRef}
     >
       <MenuIcon />
     </Button>

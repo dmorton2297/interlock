@@ -20,6 +20,7 @@ export function Modal(props: ModalProps) {
         <Box
           className={`interlock_modal_overlay`}
           onClick={props.handleCloseModal}
+          innerRef={props.innerRef}
         >
           <Flex
             className={`interlock_modal ${className}`}
