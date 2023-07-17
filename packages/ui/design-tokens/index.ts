@@ -20,6 +20,7 @@ export enum Tokens {
   COLOR_WHITE = 'var(--color-white)',
   COLOR_YELLOW = 'var(--color-yellow)',
   COLOR_GRAY = 'var(--color-gray)',
+  COLOR_LIGHTGRAY = 'var(--color-lightrgray',
   COLOR_LIST_MARKER = 'var(--color-list-marker)',
   SPACING_0 = 'var(--spacing-0)',
   SPACING_1 = 'var(--spacing-1)',
