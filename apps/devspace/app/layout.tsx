@@ -1,7 +1,8 @@
-import { Box, Text, Link } from "ui";
+import { Box, Text, Link, COLOR_BLACK, COLOR_RED, Tokens, Flex } from "ui";
 import "./layout.css";
 import type { Metadata } from "next";
 import { AppNavigation } from "../components/Navigation";
+import { HotKeyInfo } from "../components/HotKeyInfo";
 
 export const metadata: Metadata = {
   title: "devspace blog",
@@ -32,7 +33,10 @@ export default function RootLayout({
             <AppNavigation />
           </Box>
 
-          <Box className="app-content">{children}</Box>
+          <Box className="app-content">
+            <>{children}</>
+          </Box>
+          <HotKeyInfo />
         </Box>
       </body>
     </html>

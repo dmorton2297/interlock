@@ -4,12 +4,9 @@ body {
   margin: 0;
 }
 
-
 .app-container {
   --navigation-height: 70px;
-  --app-content-height: calc(
-    100% - var(--navigation-height)
-  );
+  --app-content-height: calc(100% - var(--navigation-height));
   height: 100vh;
   display: grid;
   grid-template-columns: 100%;
@@ -27,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  padding: var(--spacing-1)
+  padding: var(--spacing-1);
 }
 
 .app-content {

@@ -1,0 +1,35 @@
+.hot-key {
+  outline: 1px solid black;
+  box-shadow: 2px 2px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  top: 100%;
+  align-self: center;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.hot-key-info-container {
+  position: absolute;
+  bottom: 0;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.hot-key-info {
+  outline: 1px solid var(--color-black);
+  box-shadow: 4px 3px var(--color-gray);
+  background-color: var(--color-white);
+  padding: var(--spacing-1);
+  gap: var(--spacing-0);
+}
+
+.hide-action {
+  position: absolute;
+  bottom: 55px;
+  left: 410px;
+  text-decoration: underline;
+  cursor: pointer;
+}

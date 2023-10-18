@@ -30,7 +30,6 @@ export const NAVIGATION_LINKS = [
 
 export function AppNavigation() {
   const [open, setOpen] = useState(false);
-  const [keyHelperVisible, setKeyHelperVisible] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -47,18 +46,9 @@ export function AppNavigation() {
         if (e.key === "k") appContent.scroll({ top: appContent.scrollTop - 30 });
         
       };
-      const mouseEnter = () => setKeyHelperVisible((v) => true);
-      const mouseLeave = () => setKeyHelperVisible(false);
       document.addEventListener("keypress", keyListen);
-
-      if (currButton) {
-        currButton.addEventListener("mouseenter", mouseEnter);
-        currButton.addEventListener("mouseleave", mouseLeave);
-      }
       return () => {
         document.removeEventListener("keypress", keyListen);
-        document.removeEventListener("mouseenter", mouseEnter);
-        document.removeEventListener("mouseleave", mouseLeave);
       };
     }
   });
@@ -88,7 +78,6 @@ export function AppNavigation() {
     </Modal>
   ) : (
     <Flex>
-      {keyHelperVisible && <NavigationButtonInfo />}
       <Button
         className="app-menu-trigger"
         onClick={() => setOpen((open) => !open)}
