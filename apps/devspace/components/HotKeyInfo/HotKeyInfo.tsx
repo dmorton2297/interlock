@@ -36,7 +36,11 @@ export function HotKeyInfo() {
         <Flex className="hot-key" justify="center">
           <Text css={{ justifySelf: "center", alignSelf: "center" }}>P</Text>
         </Flex>
-        <Text css={{ paddingRight: Tokens.SPACING_1 }}>Open/Close Menu</Text>
+        <Text css={{ paddingRight: Tokens.SPACING_1 }}>Menu</Text>
+        <Flex className="hot-key" justify="center">
+          <Text css={{ justifySelf: "center", alignSelf: "center" }}>H</Text>
+        </Flex>
+        <Text css={{ paddingRight: Tokens.SPACING_1 }}>Home</Text>
         <Flex className="hot-key" justify="center">
           <Text css={{ justifySelf: "center", alignSelf: "center" }}>K</Text>
         </Flex>

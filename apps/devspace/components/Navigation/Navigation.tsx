@@ -44,7 +44,7 @@ export function AppNavigation() {
         if (e.key === "p") setOpen((open) => !open);
         if (e.key === "j") appContent.scroll({ top: appContent.scrollTop + 30 })
         if (e.key === "k") appContent.scroll({ top: appContent.scrollTop - 30 });
-        
+        if (e.key === "h") window.location.href = '/'
       };
       document.addEventListener("keypress", keyListen);
       return () => {
