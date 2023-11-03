@@ -33,9 +33,11 @@ export default function RootLayout({
             <AppNavigation />
           </Box>
 
-          <Box className="app-content">
-            <>{children}</>
-          </Box>
+          <Flex justify="center" className="app-content">
+            <Box css={{ maxWidth: 1200 }}>
+              <Box>{children}</Box>
+            </Box>
+          </Flex>
           <HotKeyInfo />
         </Box>
       </body>

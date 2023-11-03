@@ -7,7 +7,13 @@ import { NavigationButtonInfo } from "../NavigationButtonsInfo";
 
 export const NAVIGATION_LINKS = [
   {
-    key: "12 16 2020 ApolloClient React demo",
+    key: "11 13 2023 New beginnings",
+    children: (
+      <Link to="/new-beginnings">11/13/2023 A start from scratch</Link>
+    ),
+  },
+  {
+    key: "12 16 2020 ApolloClient react demo",
     children: (
       <Link to="/graphql-react">12/16/2020 ApolloClient React demo</Link>
     ),

@@ -10,11 +10,11 @@ import type { MDXComponents } from "mdx/types";
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   const config: MDXComponents = {
     // Allows customizing built-in components, e.g. to add styling.
-    h1: ({ children }) => <Text variant="header">{children}</Text>,
-    h2: ({ children }) => <Text variant="subheader">{children}</Text>,
+    h1: ({ children }) => <Text css={{ fontSize: '2.5rem', fontWeight: 'bolder' }} variant="header">{children}</Text>,
+    h2: ({ children }) => <Text css={{ fontSize: '2rem', fontStyle: 'italic' }}variant="subheader">{children}</Text>,
     h3: ({ children }) => <Text variant="subheader">{children}</Text>,
-    p: ({ children }) => <Text variant="body">{children}</Text>,
-    a: (props) => <Link {...props} to={props.href || '#'}>{props.children}</Link>,
+    p: ({ children }) => <Text css={{ fontSize: '1.2rem' }} variant="body">{children}</Text>,
+    a: (props) => <Link {...props} css={{ fontSize: '1.2rem' }} to={props.href || '#'}>{props.children}</Link>,
     ...components,
   }
   return config;
