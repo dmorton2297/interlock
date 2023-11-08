@@ -14,6 +14,9 @@ coverage
 out/
 build
 
+# pfpipe project
+apps/pfpiper-ui
+
 # misc
 .DS_Store
 *.pem

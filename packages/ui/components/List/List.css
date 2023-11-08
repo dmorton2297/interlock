@@ -1,5 +1,6 @@
 .interlock_list {
   padding-inline-start: unset;
+  margin: 0;
 }
 
 .interlock_list li {
