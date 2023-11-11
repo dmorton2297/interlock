@@ -1,0 +1,207 @@
+:root {
+  --color-red: red;
+  --color-blue: blue;
+  --color-black: black;
+  --color-white: white;
+  --color-gray: gray;
+  --color-yellow: yellow;
+  --color-lightgray: lightgray;
+  --color-list-marker: gray;
+  --spacing-0: 0;
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-3: 2rem;
+  --text-size-x-small: 0.8rem;
+  --text-size-small: 1.0rem;
+  --text-size-medium: 1.5rem;
+  --text-size-large: 2.0rem;
+  --text-line-height-x-small: 1.5rem;
+  --text-line-height-small: 2.0rem;
+  --text-line-height-medium: 2.5rem;
+  --text-line-height-large: 3.0rem;
+  --box-border-radius: 3px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/** Paddings */
+.interlock_padding-small {
+  padding: var(--spacing-1)
+}
+
+.interlock_padding-medium {
+  padding: var(--spacing-2)
+}
+
+.interlock_padding-large {
+  padding: var(--spacing-2)
+}
+
+.interlock_padding-x-large {
+  padding: var(--spacing-3)
+}
+
+/** Margins **/
+.interlock_margin-small {
+  margin: var(--spacing-1)
+}
+
+.interlock_margin-medium {
+  margin: var(--spacing-2)
+}
+
+.interlock_margin-large {
+  margin: var(--spacing-2)
+}
+
+.interlock_margin-x-large {
+  margin: var(--spacing-3)
+}
+
+.interlock_text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: block;
+}
+
+.interlock_text-header {
+  font-size: var(--text-size-large);
+  line-height: var(--text-line-height-large);
+}
+
+.interlock_text-subheader {
+  font-size: var(--text-size-medium);
+  line-height: var(--text-line-height-medium);
+}
+
+.interlock_text-body {
+  font-size: var(--text-size-small);
+  line-height: var(--text-line-height-small);
+}
+
+.interlock_text-caption {
+  font-size: var(--text-size-x-small);
+  line-height: var(--text-line-height-x-small);
+}
+
+.interlock_text_align-left {
+  text-align: left;
+}
+
+.interlock_text_align-center {
+  text-align: center;
+}
+
+.interlock_text_align-right {
+  text-align: right;
+}
+
+.interlock_button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.interlock_flex {
+  display: flex
+}
+
+.interlock_flex_justify-center {
+  justify-content: center;
+}
+
+.interlock_flex_justify-between {
+  justify-content: space-between;
+}
+
+.interlock_flex_justify-around {
+  justify-content: space-around;
+}
+
+.interlock_flex_justify-end {
+  justify-content: flex-end;
+}
+
+.interlock_flex_direction-row {
+  flex-direction: row;
+}
+
+.interlock_flex_direction-column {
+  flex-direction: column;
+}
+.interlock_input {
+  padding: var(--spacing-1);
+  font-size: var(--text-size-small);
+}
+.interlock_link {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--text-size-small);
+}
+.interlock_list {
+  padding-inline-start: unset;
+  margin: 0;
+}
+
+.interlock_list li {
+  display: inline;
+}
+
+.interlock_list_marker {
+  align-self: center;
+  margin-right: var(--spacing-1);
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  background-color: var(--color-list-marker);
+}
+
+.interlock_list-show-borders {
+  border: 1px solid var(--color-black);
+}
+
+.interlock_list-show-borders li .interlock_list_item {
+  border: unset;
+  border-bottom: 1px solid var(--color-black);
+}
+
+.interlock_list-show-borders li:last-child .interlock_list_item {
+  border: unset;
+}
+
+.interlock_modal_overlay {
+  background-color: rgba(0, 0, 0, 0.73);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  animation-duration: 0.3s;
+  animation-name: fadeIn;
+}
+
+.interlock_modal {
+  background-color: var(--color-white);
+  align-self: center;
+  animation-duration: 0.3s;
+  animation-name: fadeIn;
+}
+
+.interlock_modal-vertical-expand {
+  flex-grow: 1;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

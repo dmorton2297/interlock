@@ -14,7 +14,6 @@
 
 .interlock_modal {
   background-color: var(--color-white);
-  padding: var(--spacing-1); 
   align-self: center;
   animation-duration: 0.3s;
   animation-name: fadeIn;

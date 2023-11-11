@@ -1,0 +1,101 @@
+[
+  {
+    "Date": "11/6/2023",
+    "Description": "Online Transfer from Chk ...8089 transaction#: x3405",
+    "Category": "Transfers (General)",
+    "Amount": "$200.00",
+    "Account": "Dan Checking",
+    "Account #": "xxxx5218",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Online Transfer from Chk ...8089 transaction#: x0174",
+    "Category": "Transfers (General)",
+    "Amount": "$20.00",
+    "Account": "Dan Checking",
+    "Account #": "xxxx5218",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Non-chase Atm Withdraw, Xx4746, 11/xx1604 W No",
+    "Category": "Ganj",
+    "Amount": "-$213.50",
+    "Account": "Dan Checking",
+    "Account #": "xxxx5218",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Non-chase Atm Fee-with",
+    "Category": "Ganj",
+    "Amount": "-$3.00",
+    "Account": "Dan Checking",
+    "Account #": "xxxx5218",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Venmo, Cashout, Ppd Id: x1992",
+    "Category": "Restaurants",
+    "Amount": "$370.00",
+    "Account": "Joint Checking",
+    "Account #": "xxxx8089",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Online Transfer to Chk ...5218 transaction#: x3405 11/06",
+    "Category": "Transfers (General)",
+    "Amount": "-$200.00",
+    "Account": "Joint Checking",
+    "Account #": "xxxx8089",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Online Transfer to Chk ...5218 transaction#: x0174 11/06",
+    "Category": "Transfers (General)",
+    "Amount": "-$20.00",
+    "Account": "Joint Checking",
+    "Account #": "xxxx8089",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Atm Withdrawal, Xx4949, 11/xx1551 N Ki",
+    "Category": "Everything Else",
+    "Amount": "-$80.00",
+    "Account": "Joint Checking",
+    "Account #": "xxxx8089",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  },
+  {
+    "Date": "11/6/2023",
+    "Description": "Venmo, Payment, x5111, Web Id: x1992",
+    "Category": "Everything Else",
+    "Amount": "-$47.00",
+    "Account": "Joint Checking",
+    "Account #": "xxxx8089",
+    "Institution": "Chase",
+    "Month": "11/1/23",
+    "Week": "11/5/23"
+  }
+]

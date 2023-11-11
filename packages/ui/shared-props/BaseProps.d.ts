@@ -1,0 +1,28 @@
+import { ReactNode } from "react";
+export interface BaseProps<T> {
+    /**
+     * @param children children that are passed into the box
+     */
+    children?: React.ReactNode | ReactNode[];
+    /**
+     * @param  padding padding setting for the box (Optional)
+     */
+    padding?: "small" | "medium" | "large" | "x-large" | "none";
+    /**
+     * @param  margin padding setting for the box (Optional)
+     */
+    margin?: "small" | "medium" | "large" | "x-large" | "none";
+    /**
+     * @param CSS overrides provided in-line. (Optional)
+     */
+    css?: React.CSSProperties;
+    /**
+     * @param className css classnames
+     */
+    className?: string;
+    /**
+     * @param ref allows setting a react ref on object
+     */
+    innerRef?: React.RefObject<T>;
+}
+//# sourceMappingURL=BaseProps.d.ts.map

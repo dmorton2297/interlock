@@ -37,10 +37,12 @@ export function List(props: ListProps) {
     listItemBoxProps,
     ...boxProps
   } = props;
+  const { padding = "none", margin = "none", css } = props;
+  const paddingClassName = `interlock_padding-${padding}`;
+  const marginClassName = `interlock_margin-${margin}`;
   const showBordersClass = variant === 'borders' ? "interlock_list-show-borders" : "";
   return (
-    <ul className={`interlock_list ${showBordersClass}`}>
-      <Box {...boxProps}>
+    <ul className={`interlock_list ${paddingClassName} ${marginClassName} ${showBordersClass}`} style={{...css}}>
         {items.map((x) => (
           <li key={x.key}>
             <Flex
@@ -54,7 +56,6 @@ export function List(props: ListProps) {
             </Flex>
           </li>
         ))}
-      </Box>
     </ul>
   );
 }

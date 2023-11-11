@@ -14,7 +14,9 @@ export interface ModalProps extends BoxProps {
 }
 
 export function Modal(props: ModalProps) {
-  const { css, className = "" } = props;
+  const { css, padding, className = "" } = props;
+  console.log(padding);
+
   return props.open
     ? createPortal(
         <Box
@@ -26,6 +28,7 @@ export function Modal(props: ModalProps) {
             className={`interlock_modal ${className}`}
             direction="column"
             css={css}
+            padding={props.padding}
             onClick={(e) => e.stopPropagation()}
           >
             {props.children}
