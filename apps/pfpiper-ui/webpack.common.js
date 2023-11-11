@@ -8,8 +8,8 @@ module.exports = {
    * Upon build, output this project to dist
    */
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "build"),
     clean: true,
   },
   module: {
