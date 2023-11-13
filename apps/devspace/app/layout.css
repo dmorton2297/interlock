@@ -14,7 +14,6 @@ body {
   overflow: hidden;
 }
 
-
 .header-text {
   text-decoration: none;
   text-transform: none;
@@ -37,5 +36,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-a:visited { color: var(--color-white) }
-
+a:visited {
+  color: var(--color-white);
+}
+a {
+  color: var(--color-white);
+}
