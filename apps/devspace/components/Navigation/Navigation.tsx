@@ -65,6 +65,7 @@ export function AppNavigation() {
       handleCloseModal={() => setOpen((open) => !open)}
       className="app-navigation"
       innerRef={modalRef}
+      css={{ backgroundColor: "#131313" }}
     >
       <Box padding="small">
         <Text
@@ -72,6 +73,7 @@ export function AppNavigation() {
           css={{
             textAlign: "center",
             textDecoration: "underline",
+            color: 'whitesmoke'
           }}
         >
           2020

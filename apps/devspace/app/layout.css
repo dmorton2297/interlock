@@ -20,7 +20,7 @@ body {
   text-transform: none;
   cursor: pointer;
   color: var(--color-white);
-  background-color: var(--color-black);
+  background-color: #131313;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -30,4 +30,12 @@ body {
 .app-content {
   padding: var(--spacing-2);
   overflow-y: scroll;
+  background-color: #131313;
+  color: whitesmoke;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
+
+a:visited { color: var(--color-white) }
+
