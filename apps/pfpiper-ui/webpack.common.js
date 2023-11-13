@@ -14,10 +14,6 @@ module.exports = {
   },
   module: {
     rules: [
-      /**
-       * This rule resolves typescript files using ts-loader
-       * https://www.npmjs.com/package/ts-loader
-       */
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
@@ -26,12 +22,6 @@ module.exports = {
         },
         use: "ts-loader",
       },
-      /**
-       * This rule resolves css using mini-css extract plugin
-       * and css-loader
-       * https://webpack.js.org/plugins/mini-css-extract-plugin/
-       * https://www.npmjs.com/package/css-loader
-       */
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
