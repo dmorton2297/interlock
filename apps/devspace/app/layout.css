@@ -28,7 +28,7 @@ body {
 
 .app-content {
   padding: var(--spacing-2);
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: #131313;
   color: whitesmoke;
   -webkit-font-smoothing: antialiased;
