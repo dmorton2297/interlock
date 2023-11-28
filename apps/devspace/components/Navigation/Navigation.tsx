@@ -69,14 +69,13 @@ export function AppNavigation() {
     >
       <Box padding="small">
         <Text
-          variant="subheader"
+          variant="header"
           css={{
             textAlign: "center",
-            textDecoration: "underline",
             color: 'whitesmoke'
           }}
         >
-          2020
+          Articles
         </Text>
         <List
           listItemBoxProps={{ padding: "small" }}
