@@ -13,6 +13,9 @@ body {
   grid-template-rows: var(--navigation-height) var(--app-content-height);
   overflow: hidden;
 }
+pre {
+  width: 80vw;
+}
 
 .header-text {
   text-decoration: none;

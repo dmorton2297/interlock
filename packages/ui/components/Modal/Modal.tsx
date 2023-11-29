@@ -3,7 +3,6 @@ import { createPortal } from "react-dom";
 import { Box } from "../Box";
 import { BoxProps } from "../Box/Box";
 import { Flex } from "../Flex";
-import { Text } from "../Text";
 import "./Modal.css";
 import { Button } from "../Button";
 
@@ -11,6 +10,7 @@ export interface ModalProps extends BoxProps {
   open: boolean;
   handleCloseModal: () => void;
   className?: string;
+  closeButtonCSS?: React.CSSProperties;
 }
 
 export function Modal(props: ModalProps) {
@@ -37,6 +37,7 @@ export function Modal(props: ModalProps) {
               <Button
                 className="interlock_modal-close-button"
                 onClick={props.handleCloseModal}
+                css={props.closeButtonCSS}
               >
                 Close
               </Button>

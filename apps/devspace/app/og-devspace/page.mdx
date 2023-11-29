@@ -1,3 +1,5 @@
+import { Box } from "ui"
+
 # DevSpace Blogging Platform - November 2020 - Chicago, IL
 *note: Updated July 11 2023. This post is about this website original implementation*
 
@@ -33,6 +35,7 @@ Since markdown is so familiar to developers, writing technical blogs that are fo
 
  Another benefit is it has great support for code formatting, which is an essential part of technical blog posts. Take for example below - which behind the scenes is plain text and mark down decorators, but gets formatted and highlighted nicely.
 
+<Box css={{ overflowX: 'auto' }}>
 ``` JavaScript
 function $initHighlight(block, cls) {
   try {
@@ -56,6 +59,7 @@ function $initHighlight(block, cls) {
 
 export  $initHighlight;
 ```
+</Box>
 
 <br />
 

@@ -1,9 +1,8 @@
 "use client";
 
-import { Box, Button, Flex, Link, List, Modal, Text } from "ui";
+import { Box, Button, Flex, Link, List, Modal, Text, Tokens } from "ui";
 import "./Navigation.css";
 import { useEffect, useRef, useState } from "react";
-import { NavigationButtonInfo } from "../NavigationButtonsInfo";
 
 export const NAVIGATION_LINKS = [
   {
@@ -66,6 +65,7 @@ export function AppNavigation() {
       className="app-navigation"
       innerRef={modalRef}
       css={{ backgroundColor: "#131313" }}
+      closeButtonCSS={{ margin: Tokens.SPACING_1, outline: `1px solid white`, background: Tokens.COLOR_BLACK, color: Tokens.COLOR_WHITE }}
     >
       <Box padding="small">
         <Text
@@ -75,7 +75,7 @@ export function AppNavigation() {
             color: 'whitesmoke'
           }}
         >
-          Articles
+          Posts
         </Text>
         <List
           listItemBoxProps={{ padding: "small" }}
