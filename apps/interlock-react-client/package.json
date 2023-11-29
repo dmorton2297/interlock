@@ -4,14 +4,14 @@
   "description": "Client side react client",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --port 3001 --open"
+    "dev": "webpack serve --open --port 3000 --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Interlock",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ui": "*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.11",

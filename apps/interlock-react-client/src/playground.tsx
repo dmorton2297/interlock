@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Playground: React.FC = () => {
-  return "Hello world";
+  return "Interlock simple react client";
 };
