@@ -1,3 +1,6 @@
 {
-  "mdx.experimentalLanguageServer": true
+  "mdx.experimentalLanguageServer": true,
+  "cSpell.words": [
+    "dmorton"
+  ]
 }

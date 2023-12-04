@@ -1,0 +1,11 @@
+{
+  "name": "dan-morton-portfolio",
+  "version": "0.0.1",
+  "description": "Dan Morton's portfolio website",
+  "scripts": {
+    "dev": "webpack serve --open --port 3000 --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "dmorton2297",
+  "license": "ISC"
+}
