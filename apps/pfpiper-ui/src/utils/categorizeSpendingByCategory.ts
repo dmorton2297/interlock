@@ -16,5 +16,5 @@ export default function categorizeSpendingByCategory(
   return Object.keys(amountDict)
     .map((x) => ({ name: x, value: amountDict[x] * -1 }))
     .filter((x) => x.value > 0)
-    .filter((x) => x.name !== "Rent" && x.name !== "Transfers (General)");
+    .filter((x) => x.name !== "Rent" && x.name !== "Transfers (General)" && x.name !== "Credit card payment");
 }
